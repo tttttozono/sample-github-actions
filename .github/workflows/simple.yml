@@ -1,11 +1,11 @@
-# ワークフローの名称
 name: 'Hello World'
-# # ①トリガー
+
 on: [push]
 
-# jobs: #②ジョブ
-hello-world:
- name: hello world job
- runs-on: ubuntu-latest
- steps: #③ステップ
- - run: echo "Hello World!!"
+jobs:
+ hello-world:
+  name: hello world job
+  runs-on: ubuntu-latest
+
+  steps:
+  - run: echo "Hello World!!"
